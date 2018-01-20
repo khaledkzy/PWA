@@ -14,4 +14,5 @@
 ```
 
 >Now (ctrl+shift+i) and open manifest nothing is there !? Yes because you should be running from a server.
->
+>to check if your service worker is working properly chrome://serviceworker-internals/
+> There is no service worker registerd ??? offcourse you forget to add site.js to your html

@@ -1,7 +1,21 @@
+self.addEventListener('install', function (e) {
+  e.waitUntil(
+    caches.open('the-magic-cache').then(function (cache) {
+      return cache.addAll([
+        '/',
+        '/index.html',
+        '/manifest.json',
+        '/site.js',
+        '/styles.css',
+      ]);
+    })
+  );
+});
+
 /** An empty service worker! */
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(function (response) {
       return response || fetch(event.request);
     })
   );
@@ -21,24 +35,12 @@ self.addEventListener('push', function (event) {
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open('the-magic-cache').then(function (cache) {
-    });
-  );
-});
+    })
+  )
+})
 
 //Now, once we've got hold of that,
 // let's update that code to add our entire site to the cache-
 
-self.addEventListener('install', function (e) {
-  e.waitUntil(
-    caches.open('the-magic-cache').then(function (cache) {
-      return cache.addAll([
-        '/',
-        '/index.html',
-        '/manifest.json',
-        '/site.js',
-        '/styles.css',
-      ]);
-    })
-  );
-});
+
 

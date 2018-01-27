@@ -1,14 +1,24 @@
 <html>
 
 <head>
+  <meta charset="uft-8" />
+  <meta name="theme-color" content="#536878" />
   <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>PURE</title>
   <link rel="manifest" href="manifest.json" />
-  <script defer src="site.js"></script>
 </head>
 
 <body>
-
-<h1> Pure Service Worker. </h1>
+  <h1> Pure Service Worker. </h1>
 </body>
-
+<script>
+    if ('serviceWorker' in navigator) {
+      console.log("Will service worker register?");
+      navigator.serviceWorker.register('service-worker.js').then(function(reg){
+        console.log("Yes it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+    }
+  </script>
 </html>

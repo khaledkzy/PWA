@@ -3,7 +3,7 @@
   "name": "PURE App",
   "icons": [
     {
-      "src":"heart.png",
+      "src":"images/heart.png",
       "sizes": "192x192",
       "type": "image/png"
     }

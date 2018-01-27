@@ -1,6 +1,6 @@
 {
-  "short_name": "PURE",
-  "name": "PURE",
+  "short_name": "PURE PWA",
+  "name": "PURE App",
   "icons": [
     {
       "src":"heart.png",

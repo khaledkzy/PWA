@@ -1,6 +1,6 @@
 {
-    "name": "Khaled site",
-    "short_name": "KZY",
+    "name": "Pure PWA",
+    "short_name": "PURE",
     "display": "minimal-ui",
     "start_url": "/PWA/",
     "theme_color": "#673ab6",

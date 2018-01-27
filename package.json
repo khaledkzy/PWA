@@ -2,7 +2,7 @@
   "name": "pwa",
   "version": "1.0.0",
   "description": "> cd to wherever you want.\r > type: npm init - this will create the package JSON file for you you can create it manually if you which.\r >\r >",
-  "main": "index.js",
+  "main": "/PWA/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

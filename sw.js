@@ -21,12 +21,7 @@ self.addEventListener('fetch', function (event) {
   );
 });
 
-self.addEventListener('push', function (event) {
-  event.waitUntil(
-    self.registration.showNotification('Got Push?', {
-      body: 'Push Message received'
-    }));
-});
+
 
 // Let's use this new Service Worker to make sure that our Dragotchi
 // site works offline. First, let's open up the sw.js script again. First,
@@ -41,6 +36,5 @@ self.addEventListener('install', function (e) {
 
 //Now, once we've got hold of that,
 // let's update that code to add our entire site to the cache-
-
 
 
